@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="A privacy-first security readiness guide. This website does not scan your device for malware.">
+  <title>Bharat Internet Doctor | Privacy-first security</title>
+  <style>
+    :root{color-scheme:dark;--bg:#07111f;--panel:#101d2e;--panel2:#0b1727;--line:#23354c;--text:#e7f0fb;--muted:#a8b8cb;--cyan:#51e3d2;--blue:#85b9ff;--green:#73e2a7;--amber:#ffd078}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 12% 0%,#12304a 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100vh}
+    .wrap{width:min(980px,100% - 32px);margin:0 auto;padding:32px 0 56px}.top{display:flex;justify-content:space-between;align-items:center;gap:14px;border-bottom:1px solid var(--line);padding-bottom:20px}.brand{font-weight:800;letter-spacing:.02em}.brand span{color:var(--cyan)}.privacy{border:1px solid #286552;color:var(--green);border-radius:999px;padding:6px 11px;font-size:.82rem;white-space:nowrap}
+    h1{font-size:clamp(2rem,5vw,3.35rem);line-height:1.08;margin:42px 0 14px;max-width:760px}h1 em{font-style:normal;color:var(--cyan)}.intro{max-width:720px;color:var(--muted);font-size:1.08rem}.notice{margin:24px 0;padding:17px 18px;border:1px solid #785d27;background:#2a2111;border-radius:12px;color:#ffe4a8}.notice strong{color:#fff1c8}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:22px 0}.card{background:linear-gradient(145deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:16px;padding:21px}.card h2{font-size:1.15rem;margin:0 0 9px}.card p{color:var(--muted);margin:0}.checks{margin-top:20px}.check{display:flex;align-items:flex-start;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}.check:last-child{border:0}.icon{width:26px;height:26px;flex:0 0 26px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;color:var(--cyan);font-weight:800}.check b{display:block}.check small{color:var(--muted)}button{margin-top:16px;padding:12px 17px;border:0;border-radius:9px;background:var(--cyan);color:#06201d;font-weight:800;font-size:1rem;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid white;outline-offset:3px}.result{margin-top:14px;color:var(--muted);min-height:1.5em}.steps{padding-left:22px;color:var(--muted)}.steps li{padding:5px 0}.steps a{color:var(--blue)}.foot{border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:.88rem;margin-top:30px}.tag{display:inline-block;color:var(--cyan);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+    @media(max-width:680px){.grid{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}.wrap{width:min(100% - 24px,980px);padding-top:20px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div class="brand">🛡️ BHARAT <span>INTERNET DOCTOR</span></div>
+      <div class="privacy">● Privacy-first · No login · No app-side storage</div>
+    </header>
+    <section aria-labelledby="hero-title">
+      <h1 id="hero-title">Safer internet starts with <em>honest protection.</em></h1>
+      <p class="intro">A simple security guide for people in India. Check this page’s browser connection and get practical next steps for protecting your device. No account, scan upload, API key, or AI service is used.</p>
+      <div class="notice" role="note"><strong>Important:</strong> A website cannot silently scan all files, detect every virus, or monitor your device 24/7. This page does not claim to do that. Use your device’s trusted, installed security software for malware scanning and continuous protection.</div>
+    </section>
+    <section class="grid" aria-label="Security information">
+      <article class="card">
+        <span class="tag">This page only</span>
+        <h2>Browser connection check</h2>
+        <p>This check reads browser-provided connection properties only. It does not inspect files, identify you, contact a scanner, or send results anywhere.</p>
+        <button id="checkButton" type="button">Check this connection</button>
+        <div class="result" id="result" role="status" aria-live="polite">No check has been run.</div>
+      </article>
+      <article class="card">
+        <span class="tag">What a website can’t check</span>
+        <h2>Your device needs a local scanner</h2>
+        <p>Web browsers isolate websites from your operating system and personal files. That protects your privacy, but means this page cannot run a full antivirus scan or promise continuous monitoring.</p>
+      </article>
+    </section>
+    <section class="card checks" aria-labelledby="protect-title">
+      <span class="tag">Recommended next steps</span>
+      <h2 id="protect-title">Protect your phone or computer</h2>
+      <ol class="steps">
+        <li>Update your operating system, browser, and apps using their official update settings.</li>
+        <li>Keep the built-in security protection enabled (for example, Windows Security, Google Play Protect, or Apple’s built-in protections).</li>
+        <li>For a suspected infection, run a full scan with trusted security software obtained from its official source. Avoid “cleaner” downloads from pop-ups or unsolicited messages.</li>
+        <li>Use unique passwords and multi-factor authentication; do not share one-time passwords or install remote-access apps at a stranger’s request.</li>
+        <li>If you are responding to an online financial cybercrime in India, contact your bank promptly and use the official National Cyber Crime Reporting Portal at <a href="https://cybercrime.gov.in/" target="_blank" rel="noopener noreferrer">cybercrime.gov.in</a> or helpline 1930. Share only information relevant to your incident.</li>
+      </ol>
+    </section>
+    <footer class="foot">
+      <p><strong>Privacy:</strong> This page has no analytics, cookies, login, database, or scan API. The connection check runs in your browser and does not transmit its result. The hosting provider may independently process standard web request metadata; this page cannot make claims about the host’s server logs.</p>
+      <p><strong>Not an antivirus:</strong> Information here is general guidance, not a diagnosis or guarantee of safety. “Secure connection” does not mean your device is malware-free.</p>
+    </footer>
+  </main>
+  <script>
+    // Deliberately limited to browser-provided connection metadata. No network calls or persistent storage.
+    document.getElementById('checkButton').addEventListener('click', function () {
+      const result = document.getElementById('result');
+      if (window.isSecureContext) {
+        result.textContent = 'This page is running in a secure browser context (usually HTTPS or localhost). This does not scan your device or confirm it is malware-free.';
+      } else {
+        result.textContent = 'This page is not in a secure browser context. Avoid entering sensitive information and use the official HTTPS version of a site. This does not scan your device.';
+      }
+    });
+  </script>
+</body>
+</html>
